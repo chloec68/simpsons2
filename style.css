@@ -1,0 +1,256 @@
+/* ******************************************************GENERAL******************************************************************************* */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width:70%;
+    margin:auto;
+}
+
+
+body{
+    background-color:#FECE0F;
+}
+/* ************************************************************************************************************************************************ */
+
+/*************************************************************************HEADER*******************************************************************/
+header{
+    background-color:#398FD1;
+}
+
+h2{
+    color:white;
+    text-align:center;
+}
+
+#simpsonsFamilyImage{
+    width:100%;
+    vertical-align: top; 
+}
+
+/**************************************************************************MAIN*****************************************************************/
+h1{
+    color:#FECE0F;
+    padding:10px;
+    padding-left:0px;
+}
+
+article{
+    padding-top: 1em;
+    padding:20px;
+    padding-left:0px;
+    
+    
+}
+
+main p{
+    text-align: justify;
+    
+}
+
+main{
+    background-color: white;
+   
+    
+}
+
+#container_article{
+   width:100%;
+
+    
+   
+}
+#container_sections{
+    display:flex;
+    justify-content: space-evenly;
+    padding:10px;
+    border-top: 4px #398FD1 dashed;
+    
+}
+
+.the_movie{
+    max-width:33%;
+    border:2px solid grey;
+    
+}
+
+#container_movie{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    
+}
+
+/**********************************************************************FOOTER*******************************************************************/
+footer{
+    background-color:#08497B;
+    text-align: center;
+}
+
+small{
+    color:white;
+}
+
+/**************************************************************************ASIDE/AUTHOR****************************************************************/
+aside{
+    background-color:#398FD1;
+    text-align:justify;
+    padding:10px;
+    height: auto;
+    max-width:30%;
+}
+
+aside p{
+    color:white;
+    font-size:16px;
+    padding: 20px;
+}
+
+
+
+#author{
+    border : 1px white solid;
+    width:80%;
+    display:block;
+    margin:auto;
+}
+
+h3{
+    text-align: center;
+    color : white;
+    padding: 20px;
+}
+
+h2,a,h1,p,h3,small{
+    font-family: "Fredoka", sans-serif;
+}
+
+/*************************************************************NAV***********************************************************************************/
+
+nav{
+    display : flex;
+    background-color:#398FD1;
+    padding:20px;
+    width:100%;
+    text-align: center;
+    height: fit-content;
+    justify-content: center;
+}
+
+a{
+    color:white;
+    font-size:15px;
+    padding:15px;
+    text-transform:uppercase;
+}
+
+
+/* ******************************************************MEDIA-MOBILE******************************************************************************* */
+
+@media screen and (max-width: 640px){
+
+/*GENERAL*/
+
+    #wrapper{
+        width:100%;}
+
+    body{
+        background-color: white;
+        }
+
+/*MAIN*/
+ 
+article h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+article p{
+font-size:18px;
+}
+
+
+/*NAV*/
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+        width:80%;
+        margin:auto;
+        word-wrap: break-word;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius:10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    nav a{
+        font-size:16px;
+        padding:10px;
+        line-height: 30px; 
+    }
+
+
+
+/*AUTHOR*/
+    aside{
+        height:fit-content;
+    }
+
+    aside p{
+        padding:2px;
+        font-size:16px;
+    }
+
+    #author{
+        max-width:200px;
+    }
+
+    h3{
+        padding:2px;
+    }
+
+}/* ******************************************************MEDIA-TABLET******************************************************************************* */
+
+@media screen and (min-width: 700px) and (max-width: 1080px) {
+
+/*GENERAL*/
+    
+    #wrapper{
+        width:100%;
+    }
+/*MAIN*/
+
+    h1{
+        font-size:30px;
+        text-align: center;
+}
+
+    article p{
+        font-size:20px;
+}
+
+/*NAV*/
+    
+    nav a{
+        font-size:18px;
+    }
+}
+
+/*AUTHOR*/
+
+    h3{
+        font-size:25px;
+    }
+
+    #author{
+        max-width: 80%;
+    }
+
+    aside p{
+        font-size:18px;
+    }
